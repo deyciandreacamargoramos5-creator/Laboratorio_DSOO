@@ -49,11 +49,12 @@ public class Libro {
     public void prestar () {
         if (disponible==false) {
             System.out.println("libro prestado");
-        } else System.out.println("libro no disponible por el momento");
+        } else System.out.println("libro disponible por el momento");
     }
     // metodo para devolver libro
     public void devolver () {
         disponible=true;
         System.out.println("El libro ha sido devuelto");
     }
+
 }
