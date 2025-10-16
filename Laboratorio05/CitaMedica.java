@@ -28,7 +28,7 @@ public class CitaMedica {
     public void ValidarCodigo (ArrayList<CitaMedica> citaMedica, int nuevoCodigo) {
         for (CitaMedica cita: citaMedica) {
             if (cita.getCodigo()==nuevoCodigo) {
-                System.out.println("ERROR");;
+                System.out.println("Codigo invalido");
             }
         }
     }
@@ -95,6 +95,6 @@ public class CitaMedica {
     }
 
     public String toString(){
-        return "codigo" + codigo + "paciente" + paciente + "doctor" + doctor + "Fecha" + fecha + "Hora" + hora + "Estado" + estado;
+        return "Codigo: " + codigo + "\nPaciente: " + paciente + "\nDoctor: " + doctor + "\nFecha: " + fecha + "\nHora: " + hora + "\nEstado: " + estado;
      }
 }
